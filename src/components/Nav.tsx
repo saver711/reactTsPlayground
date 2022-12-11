@@ -40,7 +40,7 @@ return (
     <li>
       <NavLink to="/">
         {({ isActive }) => (
-          <span className={isActive ? classes.active : classes.span}>App home</span>
+          <span className={isActive ? classes.active : classes.span}>Home</span>
         )}
       </NavLink>
     </li>
