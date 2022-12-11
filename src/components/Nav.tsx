@@ -38,7 +38,7 @@ export const Nav = ()=>{
 return (
   <ul>
     <li>
-      <NavLink to="/">{({ isActive }) => <span className={isActive ? classes.active : classes.span}>Home</span>}</NavLink>
+      <NavLink to="/">{({ isActive }) => <span className={isActive ? classes.active : classes.span}>home</span>}</NavLink>
     </li>
     <li>
       <NavLink to="/about">{({ isActive }) => <span className={isActive ? classes.active : classes.span}>About</span>}</NavLink>
