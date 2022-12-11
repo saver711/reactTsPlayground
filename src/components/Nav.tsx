@@ -1,7 +1,7 @@
 /////////// IMPORTS
 ///
-import classes from './Nav.module.css'
-import { NavLink } from "react-router-dom"
+import classes from "./Nav.module.css";
+import { NavLink } from "react-router-dom";
 ///
 /////////// Types
 ///
@@ -10,40 +10,49 @@ import { NavLink } from "react-router-dom"
 ///
 
 ///
-export const Nav = ()=>{
-/////////// VARIABLES
-///
+export const Nav = () => {
+  /////////// VARIABLES
+  ///
 
-///
-/////////// CUSTOM HOOKS
-///
+  ///
+  /////////// CUSTOM HOOKS
+  ///
 
-///
-/////////// STATES
-///
+  ///
+  /////////// STATES
+  ///
 
-///
-/////////// SIDE EFFECTS
-///
+  ///
+  /////////// SIDE EFFECTS
+  ///
 
-///
-/////////// IF CASES
-///
+  ///
+  /////////// IF CASES
+  ///
 
-///
-/////////// FUNCTIONS & EVENTS
-///
+  ///
+  /////////// FUNCTIONS & EVENTS
+  ///
 
 ///
 return (
   <ul>
     <li>
-      <NavLink to="/">{({ isActive }) => <span className={isActive ? classes.active : classes.span}>App home</span>}</NavLink>
+      <NavLink to="/">
+        {({ isActive }) => (
+          <span className={isActive ? classes.active : classes.span}>App home</span>
+        )}
+      </NavLink>
     </li>
     <li>
-      <NavLink to="/about">{({ isActive }) => <span className={isActive ? classes.active : classes.span}>About</span>}</NavLink>
+      <NavLink to="/about">
+        {({ isActive }) => (
+          <span className={isActive ? classes.active : classes.span}>
+            About
+          </span>
+        )}
+      </NavLink>
     </li>
-
   </ul>
 )
 }
