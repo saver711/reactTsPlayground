@@ -1,0 +1,14 @@
+*, body{
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #333;
+    color: rgb(207, 207, 207);
+}
+a{
+    color: chartreuse;
+}

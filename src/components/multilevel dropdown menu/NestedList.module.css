@@ -1,0 +1,27 @@
+/* eslint-disable */
+.menu {
+  li {
+    cursor: pointer;
+
+    &:not(.has-submenu) {
+      transition: all 0.12s ease;
+      &:hover {
+        background-color: #aaa;
+        color: #fff;
+      }
+    }
+  }
+}
+.has-submenu {
+  font-weight: bold;
+
+  li:not(.has-submenu) {
+    font-weight: 400;
+  }
+
+  &:not(.opened).has-submenu {
+    li {
+      display: none;
+    }
+  }
+}

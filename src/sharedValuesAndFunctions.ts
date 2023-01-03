@@ -1,0 +1,1 @@
+export type Todo_TP = { text: string; id: string; completed: boolean }
