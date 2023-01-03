@@ -7,8 +7,8 @@ export const lazyLoad = (
   path: string,
   exportName?: string
 ) => {
-  return lazy(()=> {
-    const promise = import(path)
+  return lazy(() => {
+    const promise = import(/* @vite-ignore */path)
     // if the component is exported as default
     if (!exportName) return promise
     return promise.then((module: any) => ({

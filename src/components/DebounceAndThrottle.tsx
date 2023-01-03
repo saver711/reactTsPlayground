@@ -50,13 +50,13 @@ export const DebounceAndThrottle = () => {
   /////////// FUNCTIONS
   ///
   // updater
-  const updater = (prop: string) =>
+  const updater = (prop: keyof CallsType) =>
     callsUpdater((prev: CallsType) => ({
       ...prev,
       [prop]: prev[prop as keyof typeof prev] + 1,
     }))
   // Handler
-  const searchValueChangeHandler = (e: ChangeEvent<HTMLInputElement>): void => {
+  const searchValueChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     searchValueUpdater(value)
     //----------------------------
